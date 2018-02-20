@@ -13,7 +13,7 @@
 			<td align="center"><a href="adminArticulo?action=buscar">Llevamelo</a></td>			
 		</tr>
 		<tr>
-			<td align="center"><a href="adminArticulo?action=nuevo">Te lo llevo</a></td>
+			<td align="center"><a href="adminArticulo?action=registrar">Te lo llevo</a></td>
 		</tr>
 	</table>
 	

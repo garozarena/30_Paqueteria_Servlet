@@ -15,7 +15,7 @@ import javax.servlet.http.HttpSession;
 /**
  * Servlet Filter implementation class FiltroAuth
  */
-@WebFilter(filterName="FiltroAuth",urlPatterns= {"/vista/register.jsp"})
+@WebFilter(filterName="FiltroAuth",urlPatterns= {"/vista/registrar.jsp"})
 public class FiltroAuth implements Filter {
 
 	private String nombreV = "admin";

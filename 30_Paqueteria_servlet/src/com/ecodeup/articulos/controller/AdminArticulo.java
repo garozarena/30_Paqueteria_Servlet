@@ -61,13 +61,9 @@ public class AdminArticulo extends HttpServlet {
 		try {
 			switch (action) {
 			case "index":
-				index(request, response);
-				break;
-			case "nuevo":
-				nuevo(request, response);
+				response.sendRedirect("index.jsp");
 				break;
 			case "register":
-				System.out.println("entro");
 				registrar(request, response);
 				break;
 			case "mostrar":
@@ -77,6 +73,7 @@ public class AdminArticulo extends HttpServlet {
 				buscar(request, response);
 				break;
 			default:
+				response.sendRedirect("vista/"+action+".jsp");
 				break;
 			}			
 		} catch (SQLException | ParseException e) {
@@ -113,11 +110,6 @@ public class AdminArticulo extends HttpServlet {
 		RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
 		dispatcher.forward(request, response);
 	}
-	
-	private void nuevo(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, SQLException {
-		response.sendRedirect("vista/register.jsp");
-	}
-	
 	
 	private void mostrar(HttpServletRequest request, HttpServletResponse response) throws SQLException, IOException , ServletException, ParseException{
 		RequestDispatcher dispatcher = request.getRequestDispatcher("/vista/mostrar.jsp");
