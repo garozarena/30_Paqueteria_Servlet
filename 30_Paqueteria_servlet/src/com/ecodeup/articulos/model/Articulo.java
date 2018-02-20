@@ -8,12 +8,12 @@ public class Articulo {
 	private String origen;
 	private String destino;
 	private String paquete;
-	private Date fecha;
+	private String fecha;
 	private String remitente;
 	private String transportista;
 	private double precio;
 	
-	public Articulo(int id, String origen, String destino, String paquete, Date fecha, String remitente,
+	public Articulo(int id, String origen, String destino, String paquete, String fecha, String remitente,
 			String transportista, double precio) {
 		this.id = id;
 		this.origen = origen;
@@ -49,10 +49,10 @@ public class Articulo {
 	public void setPaquete(String paquete) {
 		this.paquete = paquete;
 	}
-	public Date getFecha() {
+	public String getFecha() {
 		return fecha;
 	}
-	public void setFecha(Date fecha) {
+	public void setFecha(String fecha) {
 		this.fecha = fecha;
 	}
 	public String getRemitente() {

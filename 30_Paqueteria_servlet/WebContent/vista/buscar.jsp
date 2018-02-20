@@ -9,12 +9,12 @@
 <body>
 
 <h2>Introduce los datos</h2>
-<form action="adminArticulo?action=mostrar" method="post">
-Origen: <input id="origin-input" class="controls" type="text"
+<form action="../adminArticulo?action=mostrar" method="POST">
+Origen: <input id="origin-input" class="controls" type="text" name="origen"
         placeholder="Introduce una localización de origen">
 
 <br>
-Destino<input id="destination-input" class="controls" type="text"
+Destino<input id="destination-input" class="controls" type="text" name="destino"
         placeholder="Introduce una localización de destino">
         
         <input type="submit" value="Buscar">
